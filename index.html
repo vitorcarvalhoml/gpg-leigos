@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<title>PGP (Pretty Good Privacy) & GPG (Gnu Privacy Guard) para Leigos</title>
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+</head>
+
+<xmp theme="readable" style="display:none;">
+# <i class="fa fa-key"></i> O que é criptografia
+
+## Conceitos básicos
+
+<i class="fa fa-check"></i> **Criptografar**: Transformar uma informação de sua forma original para outra forma, totalmente "ilegível", de forma que possa ser lida apenas pelo seu destinatário. O processo de criptografar também pode ser chamado de processo de cifrar.
+
+<i class="fa fa-check"></i> **Decriptografar**: Transformar uma "informação ilegível" numa informação que possa ser lida. O processo de decriptografar também pode ser chamado de processo de decifrar.
+
+## Tipos de Criptografia
+
+<i class="fa fa-check"></i> **Sistema de Chave Simétrica**: Faz uso de uma única chave, compartilhada, que é utilizada para realizar o processo de cifragem e decifragem de todas as informações que serão trocadas entre remetente e destinatário. Este sistema também pode ser utilizado por um grupo de pessoas, onde todas terão conhecimento da chave utilizada. O sistema de chave simétrica também é conhecido como sistema de Chave Única, ou sistema de Chave Secreta.
+
+<i class="fa fa-check"></i> **Sistema de Chave Assimétrica**: Tipo de criptografia que utiliza um par de chaves: uma chave pública e uma chave privada. A chave pública é distribuida livremente para que todos os participantes na troca de mensagem tomem conhecimento. Já a chave privada é conhecida apenas pelo seu dono. Este sistema também é conhecido como sistema de *Chave Pública*.
+
+<div class="alert alert-info">
+	<center>**Confidencialidade**: A chave pública é usada para cifrar mensagens, com isso apenas o dono da chave privada pode decifrá-la, evitando assim que terceiros possam ler a mensagem.</center>
+	<center>**Autenticidade**: A chave privada é usada para cifrar a mensagem, com isso garante-se que apenas o dono da chave poderia tê-la editado.</center>
+</div>
+
+	
+## Troca de mensagem criptografada
+
+João que é médico, disponibiliza sua **chave pública** no site do seu consultório. Antônio vai ao site e guarda a **chave pública do seu médico**.
+<center>
+	<i class="fa fa-user-md fa-5x" style="margin-right:20px;"></i>	<i class="fa fa-arrow-right fa-2x" style="margin-right:15px;"></i> <i class="fa fa-user fa-5x"></i><br />
+</center>
+
+João utiliza a chave pública do seu médico para criptografar o texto. Em seguida, envia por email a mensagem criptografada para seu médico.
+
+<center>
+		<i class="fa fa-pencil fa-2x" style="margin-right:-20px; color: #fdafda; z-index:100"></i><i class="fa fa-user fa-5x" style="margin-right:20px;"></i> <br />
+</center>
+
+Uma vez que João tem a mensagem no seu email, ele utiliza a sua **chave privada** para decifrar o que Antônio escreveu.
+
+<div class="alert alert-warning">
+	<center>Caso a mensagem seja interceptada por alguém, não será possível fazer a leitura, pois apenas a chave privada
+	do João decifra o conteúdo.</center>
+</div>
+
+
+### Aplicações
+
+O usuário pode utilizar a criptografia de chave pública para se comunicar de forma segura através do email. 
+Além disso, é possível aplicar essa criptografia a *pen-drives* ou discos externos, impossibilitando a visualização
+do conteúdo por terceiros.
+
+
+
+
+## Entendi! Mas como eu faço a minha chave pública/privada?
+
+### Uso Windows! :(
+
+#### Fontes
+1. https://www.youtube.com/watch?v=zcgcV1-FrJY
+</xmp>
+
+
+<script src="strapdown/strapdown.js"></script>
+</html>
